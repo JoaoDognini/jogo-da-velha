@@ -177,7 +177,7 @@ export class JogoDaVelhaService {
         break;
       }
     }
-    return exibirVitoria
+    return exibirVitoria;
   }
 
   novoJogo(): void {
