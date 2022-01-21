@@ -74,7 +74,7 @@ export class JogoDaVelhaService {
     }
 
     if(this.vitoria !== false){
-      this._showFinal = true
+      this._showFinal = true;
     }
 
     if (!this.vitoria && this.numMovimentos === 9){
@@ -84,7 +84,7 @@ export class JogoDaVelhaService {
   }
 
   fimJogo(linha: number, coluna: number, tabuleiro: any, jogador: number) {
-    let fim: any = false
+    let fim: any = false;
 
     if(tabuleiro[linha][0] === jogador && 
       tabuleiro[linha][1] === jogador && 
@@ -95,7 +95,7 @@ export class JogoDaVelhaService {
     if(tabuleiro[0][coluna] === jogador && 
        tabuleiro[1][coluna] === jogador && 
        tabuleiro[2][coluna] === jogador){
-        fim = [[coluna,0], [coluna, 1], [coluna, 2]];
+        fim = [[0, coluna], [1, coluna], [2, coluna]];
     }
 
     if(tabuleiro[0][0] === jogador && 
