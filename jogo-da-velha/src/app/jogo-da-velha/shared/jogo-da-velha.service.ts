@@ -34,7 +34,7 @@ export class JogoDaVelhaService {
   inicializarTabuleiro(): void {
     this.tabuleiro = [this.TAM_TAB];
     for(let i = 0; i < this.TAM_TAB; i++){
-      this.tabuleiro[i] = [this.VAZIO, this.VAZIO]
+      this.tabuleiro[i] = [this.VAZIO, this.VAZIO, this.VAZIO]
     }
   }
 
